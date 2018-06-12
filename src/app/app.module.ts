@@ -1,19 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
-import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AboutComponent } from './about/about.component';
-import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {masterFirebaseConfig } from './api-keys';
+import { routing } from './app.routing';
+import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditAlbumComponent } from './edit-album/edit-album.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +28,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     AlbumDetailComponent,
     AboutComponent,
-    AdminComponent
+    AdminComponent,
+    EditAlbumComponent
   ],
   imports: [
     BrowserModule,
