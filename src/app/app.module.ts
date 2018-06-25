@@ -6,13 +6,13 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
-import { EditAlbumComponent } from './edit-album/edit-album.component';
+import { FlightListComponent } from './flight-list/flight-list.component';
+import { FlightDetailComponent } from './flight-detail/flight-detail.component';
+import { EditFlightComponent } from './edit-flight/edit-flight.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,11 +25,12 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     WelcomeComponent,
-    MarketplaceComponent,
-    AlbumDetailComponent,
+    FlightListComponent,
+    FlightDetailComponent,
     AboutComponent,
     AdminComponent,
-    EditAlbumComponent
+    EditFlightComponent,
+    
   ],
   imports: [
     BrowserModule,

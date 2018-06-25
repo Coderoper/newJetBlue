@@ -1,0 +1,8 @@
+{ "flights": [{
+    "departureCity": "Seattle",
+    "arrivalCity": "Portland",
+    "dateAndTime": "06/24/18",
+    "flightNumer": "1"
+
+  }]
+}

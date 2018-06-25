@@ -1,28 +1,28 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class= "panel-title"> Add New Album to Inventory</h3>
+    <h3 class= "panel-title"> Add New Flight to Inventory</h3>
     <div class="panel-body">
         <div>
-          <label>Album Title:</label>
+          <label>Flight DepartureCity:</label>
           <br>
-          <input #newTitle>
+          <input #newDepartureCity>
         </div>
 
         <div>
-          <label>Album Artist:</label>
+          <label>Flight ArrivalCity:</label>
           <br>
-          <input #newArtist>
+          <input #newArrivalCity>
         </div>
 
         <div>
-          <label>Album Description:</label>
+          <label>Flight Date:</label>
           <br>
-          <textarea #newDescription></textarea>
+          <textarea #newDate></textarea>
         </div>
-        <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+        <button (click)="submitForm(newDepartureCity.value, newArrivalCity.value, newDate.value); newDepartureCity.value=''; newArrivalCity.value=''; newDate.value=''">Add</button>
     </div>
   </div>
 </div>
 <div>
-  <app-marketplace></app-marketplace>
+  <app-flight-list></app-flight-list>
 </div>

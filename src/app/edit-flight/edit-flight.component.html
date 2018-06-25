@@ -1,0 +1,13 @@
+<h4>Edit Flight</h4>
+
+<label>New Flight Departure City:</label>
+<input [(ngModel)]="selectedFlight.title">
+<br>
+<label>New Flight Arrival City:</label>
+<input [(ngModel)]="selectedFlight.artist">
+<br>
+<label>New Flight Date:</label>
+<input [(ngModel)]="selectedFlight.description">
+<button (click)="beginUpdatingFlight(selectedFlight)">Update</button>
+<hr>
+<button (click)="beginDeletingFlight(selectedFlight)">Delete</button>

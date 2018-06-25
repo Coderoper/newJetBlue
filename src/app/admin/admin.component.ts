@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumService } from '../album.service';
-import { Album } from '../album.model';
+import { FlightService } from '../flight.service';
+import { Flight } from '../flight.model';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [AlbumService]
+  providers: [FlightService]
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private albumService: AlbumService) { }
+  constructor(private flightService: FlightService) { }
 
   ngOnInit() {
   }
 
   submitForm(title: string, artist: string, description: string) {
-    var newAlbum: Album= new Album(title, artist, description);
-    console.log(newAlbum);
-    this.albumService.addAlbum(newAlbum);
+    var newFlight: Flight= new Flight(title, artist, description);
+    console.log(newFlight);
+    this.flightService.addFlight(newFlight);
   }
 
 }

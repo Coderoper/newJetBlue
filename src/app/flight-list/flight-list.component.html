@@ -1,0 +1,14 @@
+<h1>
+  Flight List
+</h1>
+<p>All available flight are listed below</p>
+<div *ngFor="let flight of flights | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(flight)">{{flight.departureCity}} to {{flight.arrivalCity}} on {{flight.dateAndTime}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{flight.dateAndTime}}
+      <hr>
+      <app-edit-flight [selectedFlight]="flight"></app-edit-flight>
+    </div>
+  </div>
+</div>

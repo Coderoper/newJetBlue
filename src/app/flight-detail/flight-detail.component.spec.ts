@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditAlbumComponent } from './edit-album.component';
+import { FlightDetailComponent } from './flight-detail.component';
 
-describe('EditAlbumComponent', () => {
-  let component: EditAlbumComponent;
-  let fixture: ComponentFixture<EditAlbumComponent>;
+describe('FlightDetailComponent', () => {
+  let component: FlightDetailComponent;
+  let fixture: ComponentFixture<FlightDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EditAlbumComponent ]
+      declarations: [ FlightDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EditAlbumComponent);
+    fixture = TestBed.createComponent(FlightDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
