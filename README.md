@@ -14,6 +14,23 @@ It should:
 * 3. Display an about page
 * 4. Include an option for an admin to add flights
 
+## To Deploy ##
+Run the following commands in the command line:
+* 1. Run npm install
+* 2. Run ng build --env=prod
+* 3. Create a firebase project
+* 4. Run npm install -g firebase-tools
+* 5. Run firebase login
+* 6. Run firebase init
+* 7. Choose:
+  * a. Database: Deploy Firebase Realtime Database Rules
+  * b. Hosting: Configure and deploy Firebase Hosting sites
+* 8. Set current Firebase project
+* 9. Set database.rules.json to true for read and write
+* 10 Run Firebase deploy
+* 11 Run Firebase open
+* 12 Select Hosting Deployed Site option
+
 ## Known bugs ##
 
 _No known bugs_
