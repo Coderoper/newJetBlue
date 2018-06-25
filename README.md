@@ -1,4 +1,31 @@
-# OnlineStore
+# JetBlue Website #
+
+#### By_**Austin Roberts**_ 6/24/18
+
+## Description ##
+
+This is a website that helps users choose a flight.
+
+## Specifications ##
+It should:
+
+* 1. Display a List of available flights
+* 2. Display a page detailing each flight
+* 3. Display an about page
+* 4. Include an option for an admin to add flights
+
+## Known bugs ##
+
+_No known bugs_
+
+## Technologies used ##
+* HTML5/css
+* Javascript
+* npm (Node Package Manager)
+* Angular.js
+* Google Firebase
+
+# JetBlue app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -11,7 +38,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
-In Firebase.com navigate create a database then navigate to 'add firebase to your web app' link then create an api-keys.ts file and paste the contents of the window in there.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
